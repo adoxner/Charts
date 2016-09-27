@@ -44,7 +44,7 @@ public class ChartUtils
     
     internal class func decimals(number: Double) -> Int
     {
-        if (number == 0.0)
+        if number.isNaN || number.isInfinite || number == 0.0
         {
             return 0
         }
